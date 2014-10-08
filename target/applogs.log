@@ -1,0 +1,272 @@
+
+[1;38mVERSION:[0m
+6.2.0-c9d4aaa
+
+
+[1;38mREQUEST:[0m [2014-07-11T13:27:16-07:00]
+GET /v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/summary HTTP/1.1
+Host: api.15.126.236.162.xip.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: go-cli 6.2.0-c9d4aaa / darwin
+
+
+
+[1;38mRESPONSE:[0m [2014-07-11T13:27:17-07:00]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 1446
+Content-Type: application/json;charset=utf-8
+Date: Fri, 11 Jul 2014 20:27:17 GMT
+Server: thin 1.6.1 codename Death Proof
+X-Content-Type-Options: nosniff
+X-Vcap-Request-Id: 496ee367-2755-4cea-b9c2-3e851cd7c136
+
+{"guid":"68e1f79f-84c5-49ba-ad68-c289a7cf785b","name":"Eclipse","apps":[{"guid":"8348e245-9264-4424-9615-0ba80d1f863e","urls":["node-app.15.126.236.162.xip.io"],"routes":[{"guid":"61251add-9949-4a0e-848e-0248f4d59bdb","host":"node-app","domain":{"guid":"2efbf771-802b-4bcd-abc3-2fc91eb031aa","name":"15.126.236.162.xip.io"}}],"service_count":0,"service_names":[],"running_instances":0,"guid":"8348e245-9264-4424-9615-0ba80d1f863e","name":"node-app","production":false,"space_guid":"68e1f79f-84c5-49ba-ad68-c289a7cf785b","stack_guid":"75f6073c-c1a8-4b29-bd5e-9c7adb10009b","buildpack":null,"detected_buildpack":"Node.js","environment_json":{},"memory":128,"instances":1,"disk_quota":2048,"state":"STOPPED","version":"dd41f6ac-b798-4d60-a2ad-4c122044a55b","command":null,"console":true,"debug":null,"staging_task_id":"7cb9bdc9ee35494db5ceb4c2c14bf720","package_state":"STAGED","health_check_timeout":null,"system_env_json":{"VCAP_SERVICES":{}},"distribution_zone":"default","description":"","sso_enabled":false,"restart_required":false,"autoscale_enabled":false,"min_cpu_threshold":20,"max_cpu_threshold":80,"min_instances":1,"max_instances":2}],"services":[{"guid":"152e8fff-256d-45da-9d4e-8b2c99dfe0ae","name":"mysql","bound_app_count":0,"dashboard_url":null,"service_plan":{"guid":"7217f2fa-5581-45d5-819b-541f570b7919","name":"free","service":{"guid":"d1c9a9b2-1d62-4893-931d-6f21eab52638","label":"mysql","provider":"core","version":"5.5"}}}]}
+
+[1;38mVERSION:[0m
+6.2.0-c9d4aaa
+
+
+[1;38mREQUEST:[0m [2014-07-11T13:27:20-07:00]
+GET /v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/apps?q=name%3Anode-app&inline-relations-depth=1 HTTP/1.1
+Host: api.15.126.236.162.xip.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: go-cli 6.2.0-c9d4aaa / darwin
+
+
+
+[1;38mRESPONSE:[0m [2014-07-11T13:27:21-07:00]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 3162
+Content-Type: application/json;charset=utf-8
+Date: Fri, 11 Jul 2014 20:27:21 GMT
+Server: thin 1.6.1 codename Death Proof
+X-Content-Type-Options: nosniff
+X-Vcap-Request-Id: 0ccaadcc-0d60-44b2-b9d7-8c6b7537fac8
+
+{"total_results":1,"total_pages":1,"prev_url":null,"next_url":null,"resources":[{"metadata":{"guid":"8348e245-9264-4424-9615-0ba80d1f863e","url":"/v2/apps/8348e245-9264-4424-9615-0ba80d1f863e","created_at":"2014-07-11T19:53:22+00:00","updated_at":"2014-07-11T20:25:48+00:00"},"entity":{"guid":"8348e245-9264-4424-9615-0ba80d1f863e","name":"node-app","production":false,"space_guid":"68e1f79f-84c5-49ba-ad68-c289a7cf785b","stack_guid":"75f6073c-c1a8-4b29-bd5e-9c7adb10009b","buildpack":null,"detected_buildpack":"Node.js","environment_json":{},"memory":128,"instances":1,"disk_quota":2048,"state":"STOPPED","version":"dd41f6ac-b798-4d60-a2ad-4c122044a55b","command":null,"console":true,"debug":null,"staging_task_id":"7cb9bdc9ee35494db5ceb4c2c14bf720","package_state":"STAGED","health_check_timeout":null,"system_env_json":{"VCAP_SERVICES":{}},"distribution_zone":"default","description":"","sso_enabled":false,"restart_required":false,"autoscale_enabled":false,"min_cpu_threshold":20,"max_cpu_threshold":80,"min_instances":1,"max_instances":2,"space_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b","space":{"metadata":{"guid":"68e1f79f-84c5-49ba-ad68-c289a7cf785b","url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b","created_at":"2014-07-10T23:11:48+00:00","updated_at":null},"entity":{"name":"Eclipse","organization_guid":"f0be68cb-a452-4fd9-a684-9cd5a13fe2da","is_default":false,"organization_url":"/v2/organizations/f0be68cb-a452-4fd9-a684-9cd5a13fe2da","developers_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/developers","managers_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/managers","auditors_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/auditors","apps_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/apps","domains_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/domains","service_instances_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/service_instances","app_events_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/app_events","events_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/events"}},"stack_url":"/v2/stacks/75f6073c-c1a8-4b29-bd5e-9c7adb10009b","stack":{"metadata":{"guid":"75f6073c-c1a8-4b29-bd5e-9c7adb10009b","url":"/v2/stacks/75f6073c-c1a8-4b29-bd5e-9c7adb10009b","created_at":"2014-04-12T07:21:07+00:00","updated_at":null},"entity":{"name":"lucid64","description":"Ubuntu 10.04 on x86-64"}},"service_bindings_url":"/v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/service_bindings","service_bindings":[],"routes_url":"/v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/routes","routes":[{"metadata":{"guid":"61251add-9949-4a0e-848e-0248f4d59bdb","url":"/v2/routes/61251add-9949-4a0e-848e-0248f4d59bdb","created_at":"2014-07-11T19:53:36+00:00","updated_at":null},"entity":{"host":"node-app","domain_guid":"2efbf771-802b-4bcd-abc3-2fc91eb031aa","space_guid":"68e1f79f-84c5-49ba-ad68-c289a7cf785b","domain_url":"/v2/domains/2efbf771-802b-4bcd-abc3-2fc91eb031aa","space_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b","apps_url":"/v2/routes/61251add-9949-4a0e-848e-0248f4d59bdb/apps"}}],"events_url":"/v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/events","events":[]}}]}
+
+[1;38mREQUEST:[0m [2014-07-11T13:29:22-07:00]
+PUT /v2/apps/8348e245-9264-4424-9615-0ba80d1f863e?async=true&inline-relations-depth=1 HTTP/1.1
+Host: api.15.126.236.162.xip.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: go-cli 6.2.0-c9d4aaa / darwin
+
+{"state":"STARTED"}
+
+[1;38mRESPONSE:[0m [2014-07-11T13:29:24-07:00]
+HTTP/1.1 201 Created
+Connection: close
+Content-Length: 3080
+Content-Type: application/json;charset=utf-8
+Date: Fri, 11 Jul 2014 20:29:24 GMT
+Server: thin 1.6.1 codename Death Proof
+X-Content-Type-Options: nosniff
+X-Vcap-Request-Id: cf5d1c22-dda2-4ebe-a237-407a5eff4dd9
+
+{"metadata":{"guid":"8348e245-9264-4424-9615-0ba80d1f863e","url":"/v2/apps/8348e245-9264-4424-9615-0ba80d1f863e","created_at":"2014-07-11T19:53:22+00:00","updated_at":"2014-07-11T20:29:23+00:00"},"entity":{"guid":"8348e245-9264-4424-9615-0ba80d1f863e","name":"node-app","production":false,"space_guid":"68e1f79f-84c5-49ba-ad68-c289a7cf785b","stack_guid":"75f6073c-c1a8-4b29-bd5e-9c7adb10009b","buildpack":null,"detected_buildpack":"Node.js","environment_json":{},"memory":128,"instances":1,"disk_quota":2048,"state":"STARTED","version":"799574e0-03ca-46aa-ba52-9939cc902419","command":null,"console":true,"debug":null,"staging_task_id":"7cb9bdc9ee35494db5ceb4c2c14bf720","package_state":"STAGED","health_check_timeout":null,"system_env_json":{"VCAP_SERVICES":{}},"distribution_zone":"default","description":"","sso_enabled":false,"restart_required":false,"autoscale_enabled":false,"min_cpu_threshold":20,"max_cpu_threshold":80,"min_instances":1,"max_instances":2,"space_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b","space":{"metadata":{"guid":"68e1f79f-84c5-49ba-ad68-c289a7cf785b","url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b","created_at":"2014-07-10T23:11:48+00:00","updated_at":null},"entity":{"name":"Eclipse","organization_guid":"f0be68cb-a452-4fd9-a684-9cd5a13fe2da","is_default":false,"organization_url":"/v2/organizations/f0be68cb-a452-4fd9-a684-9cd5a13fe2da","developers_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/developers","managers_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/managers","auditors_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/auditors","apps_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/apps","domains_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/domains","service_instances_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/service_instances","app_events_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/app_events","events_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b/events"}},"stack_url":"/v2/stacks/75f6073c-c1a8-4b29-bd5e-9c7adb10009b","stack":{"metadata":{"guid":"75f6073c-c1a8-4b29-bd5e-9c7adb10009b","url":"/v2/stacks/75f6073c-c1a8-4b29-bd5e-9c7adb10009b","created_at":"2014-04-12T07:21:07+00:00","updated_at":null},"entity":{"name":"lucid64","description":"Ubuntu 10.04 on x86-64"}},"service_bindings_url":"/v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/service_bindings","service_bindings":[],"routes_url":"/v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/routes","routes":[{"metadata":{"guid":"61251add-9949-4a0e-848e-0248f4d59bdb","url":"/v2/routes/61251add-9949-4a0e-848e-0248f4d59bdb","created_at":"2014-07-11T19:53:36+00:00","updated_at":null},"entity":{"host":"node-app","domain_guid":"2efbf771-802b-4bcd-abc3-2fc91eb031aa","space_guid":"68e1f79f-84c5-49ba-ad68-c289a7cf785b","domain_url":"/v2/domains/2efbf771-802b-4bcd-abc3-2fc91eb031aa","space_url":"/v2/spaces/68e1f79f-84c5-49ba-ad68-c289a7cf785b","apps_url":"/v2/routes/61251add-9949-4a0e-848e-0248f4d59bdb/apps"}}],"events_url":"/v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/events","events":[]}}
+
+[1;38mREQUEST:[0m [2014-07-11T13:29:24-07:00]
+GET /v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/instances HTTP/1.1
+Host: api.15.126.236.162.xip.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: go-cli 6.2.0-c9d4aaa / darwin
+
+
+
+[1;38mRESPONSE:[0m [2014-07-11T13:29:25-07:00]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 176
+Content-Type: application/json;charset=utf-8
+Date: Fri, 11 Jul 2014 20:29:25 GMT
+Server: thin 1.6.1 codename Death Proof
+X-Content-Type-Options: nosniff
+X-Vcap-Request-Id: 1e4119da-6e16-47a1-8fba-1830de8dce7e
+
+{"0":{"state":"STARTING","since":1405110563.64098,"debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null,"host_ip":"10.0.0.32","app_ip":null,"docker_id":null}}
+
+[1;38mREQUEST:[0m [2014-07-11T13:29:25-07:00]
+GET /v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/stats HTTP/1.1
+Host: api.15.126.236.162.xip.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: go-cli 6.2.0-c9d4aaa / darwin
+
+
+
+[1;38mRESPONSE:[0m [2014-07-11T13:29:34-07:00]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 41
+Content-Type: application/json;charset=utf-8
+Date: Fri, 11 Jul 2014 20:29:34 GMT
+Server: thin 1.6.1 codename Death Proof
+X-Content-Type-Options: nosniff
+X-Vcap-Request-Id: 8ef918fb-9916-4ad2-a7f1-e58da9192336
+
+{"0":{"state":"DOWN","since":1405110574}}
+
+[1;38mREQUEST:[0m [2014-07-11T13:29:34-07:00]
+GET /v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/instances HTTP/1.1
+Host: api.15.126.236.162.xip.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: go-cli 6.2.0-c9d4aaa / darwin
+
+
+
+[1;38mRESPONSE:[0m [2014-07-11T13:29:34-07:00]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 195
+Content-Type: application/json;charset=utf-8
+Date: Fri, 11 Jul 2014 20:29:35 GMT
+Server: thin 1.6.1 codename Death Proof
+X-Content-Type-Options: nosniff
+X-Vcap-Request-Id: 503f68bd-018b-4c9f-8603-f66b61bd0247
+
+{"0":{"state":"STARTING","since":1405110563.64098,"debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null,"host_ip":"10.0.0.32","app_ip":"172.17.0.43","docker_id":"d493d7e5fbea"}}
+
+[1;38mREQUEST:[0m [2014-07-11T13:29:34-07:00]
+GET /v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/stats HTTP/1.1
+Host: api.15.126.236.162.xip.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: go-cli 6.2.0-c9d4aaa / darwin
+
+
+
+[1;38mRESPONSE:[0m [2014-07-11T13:29:38-07:00]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 41
+Content-Type: application/json;charset=utf-8
+Date: Fri, 11 Jul 2014 20:29:38 GMT
+Server: thin 1.6.1 codename Death Proof
+X-Content-Type-Options: nosniff
+X-Vcap-Request-Id: 32688886-65e4-4381-8009-3afd6598c5f2
+
+{"0":{"state":"DOWN","since":1405110578}}
+
+[1;38mREQUEST:[0m [2014-07-11T13:29:43-07:00]
+GET /v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/instances HTTP/1.1
+Host: api.15.126.236.162.xip.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: go-cli 6.2.0-c9d4aaa / darwin
+
+
+
+[1;38mRESPONSE:[0m [2014-07-11T13:29:44-07:00]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 196
+Content-Type: application/json;charset=utf-8
+Date: Fri, 11 Jul 2014 20:29:43 GMT
+Server: thin 1.6.1 codename Death Proof
+X-Content-Type-Options: nosniff
+X-Vcap-Request-Id: 4d5673e4-108b-4f82-889a-1f9027d71f49
+
+{"0":{"state":"RUNNING","since":1405110577.9186435,"debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null,"host_ip":"10.0.0.32","app_ip":"172.17.0.43","docker_id":"d493d7e5fbea"}}
+
+[1;38mREQUEST:[0m [2014-07-11T13:29:44-07:00]
+GET /v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/stats HTTP/1.1
+Host: api.15.126.236.162.xip.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: go-cli 6.2.0-c9d4aaa / darwin
+
+
+
+[1;38mRESPONSE:[0m [2014-07-11T13:29:44-07:00]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 273
+Content-Type: application/json;charset=utf-8
+Date: Fri, 11 Jul 2014 20:29:44 GMT
+Server: thin 1.6.1 codename Death Proof
+X-Content-Type-Options: nosniff
+X-Vcap-Request-Id: 469862d0-5e94-48fb-900e-daf9ef74e575
+
+{"0":{"state":"RUNNING","stats":{"name":"node-app","uris":["node-app.15.126.236.162.xip.io"],"host":"10.0.0.32","port":56901,"uptime":21,"mem_quota":134217728,"disk_quota":2147483648,"fds_quota":16384,"usage":{"time":"2014-07-11 20:29:44 +0000","cpu":0,"mem":0,"disk":0}}}}
+
+[1;38mREQUEST:[0m [2014-07-11T13:29:44-07:00]
+GET /v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/summary HTTP/1.1
+Host: api.15.126.236.162.xip.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: go-cli 6.2.0-c9d4aaa / darwin
+
+
+
+[1;38mRESPONSE:[0m [2014-07-11T13:29:45-07:00]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 1124
+Content-Type: application/json;charset=utf-8
+Date: Fri, 11 Jul 2014 20:29:45 GMT
+Server: thin 1.6.1 codename Death Proof
+X-Content-Type-Options: nosniff
+X-Vcap-Request-Id: f5a0ccb0-0b1b-4e6b-b595-6fb0e422e580
+
+{"guid":"8348e245-9264-4424-9615-0ba80d1f863e","name":"node-app","routes":[{"guid":"61251add-9949-4a0e-848e-0248f4d59bdb","host":"node-app","domain":{"guid":"2efbf771-802b-4bcd-abc3-2fc91eb031aa","name":"15.126.236.162.xip.io"}}],"running_instances":1,"services":[],"available_domains":[{"guid":"2efbf771-802b-4bcd-abc3-2fc91eb031aa","name":"15.126.236.162.xip.io"}],"guid":"8348e245-9264-4424-9615-0ba80d1f863e","name":"node-app","production":false,"space_guid":"68e1f79f-84c5-49ba-ad68-c289a7cf785b","stack_guid":"75f6073c-c1a8-4b29-bd5e-9c7adb10009b","buildpack":null,"detected_buildpack":"Node.js","environment_json":{},"memory":128,"instances":1,"disk_quota":2048,"state":"STARTED","version":"799574e0-03ca-46aa-ba52-9939cc902419","command":null,"console":true,"debug":null,"staging_task_id":"7cb9bdc9ee35494db5ceb4c2c14bf720","package_state":"STAGED","health_check_timeout":null,"system_env_json":{"VCAP_SERVICES":{}},"distribution_zone":"default","description":"","sso_enabled":false,"restart_required":false,"autoscale_enabled":false,"min_cpu_threshold":20,"max_cpu_threshold":80,"min_instances":1,"max_instances":2}
+
+[1;38mREQUEST:[0m [2014-07-11T13:29:45-07:00]
+GET /v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/instances HTTP/1.1
+Host: api.15.126.236.162.xip.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: go-cli 6.2.0-c9d4aaa / darwin
+
+
+
+[1;38mRESPONSE:[0m [2014-07-11T13:29:45-07:00]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 196
+Content-Type: application/json;charset=utf-8
+Date: Fri, 11 Jul 2014 20:29:45 GMT
+Server: thin 1.6.1 codename Death Proof
+X-Content-Type-Options: nosniff
+X-Vcap-Request-Id: fa3debe4-828c-4298-9575-ce129a50eaf7
+
+{"0":{"state":"RUNNING","since":1405110577.9186435,"debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null,"host_ip":"10.0.0.32","app_ip":"172.17.0.43","docker_id":"d493d7e5fbea"}}
+
+[1;38mREQUEST:[0m [2014-07-11T13:29:45-07:00]
+GET /v2/apps/8348e245-9264-4424-9615-0ba80d1f863e/stats HTTP/1.1
+Host: api.15.126.236.162.xip.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: go-cli 6.2.0-c9d4aaa / darwin
+
+
+
+[1;38mRESPONSE:[0m [2014-07-11T13:29:46-07:00]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 273
+Content-Type: application/json;charset=utf-8
+Date: Fri, 11 Jul 2014 20:29:46 GMT
+Server: thin 1.6.1 codename Death Proof
+X-Content-Type-Options: nosniff
+X-Vcap-Request-Id: becd9568-5bd7-49b5-951c-51194dfade12
+
+{"0":{"state":"RUNNING","stats":{"name":"node-app","uris":["node-app.15.126.236.162.xip.io"],"host":"10.0.0.32","port":56901,"uptime":22,"mem_quota":134217728,"disk_quota":2147483648,"fds_quota":16384,"usage":{"time":"2014-07-11 20:29:46 +0000","cpu":0,"mem":0,"disk":0}}}}
